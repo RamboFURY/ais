@@ -23,7 +23,7 @@
                           <span class="icon-bar"></span>
                       </button>
                     <a href="dashboard.php" class="navbar-brand"></a>
-                    </div>
+                    </div> 
                     <div>
                         <ul class="nav navbar-nav navbar-right">
                         <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span></a></li>
