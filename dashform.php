@@ -28,6 +28,22 @@
       <input type="text" name="add" class="form-control" id="add" placeholder="place of residence">
       <label for="mob">Contact:</label>
       <input type="text" name="mob" class="form-control" id="mob" placeholder="enter your mobile number">
+      <label for="hobby">Hobbies:</label>
+      <label for="hobbies"></label>
+      <select id="hobby">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      </select>
+      <br>
+      <label for="gender">Select Gender</label><br>
+      <form action="">
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+      </form>
+      <br>
       <label for="pwd">Password:</label>
       <input type="password" name="pwd" class="form-control" id="pwd" placeholder="create a strong password">
       <label for="pwd">Renter-Password:</label>
