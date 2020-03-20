@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="panel panel-primary">
-    <div class="panel-heading"><h3>Registration Form</h3></div>
+    <div class="panel-heading"><h3>REGISTERATION FORM</h3></div>
     <div class="panel-body">
 <form class="form-default" action="" method="post" name="register">
   <div class="form-group">
