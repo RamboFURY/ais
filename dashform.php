@@ -53,7 +53,7 @@
       </div>
   </div>
 </form>
-<p>Already Registered?<a href="#"><b> Click</b></a> here.</p>
+<p>Already Registered?<a href="#"><b>  Click</b></a> here.</p>
 </div> </div> </div>
 <footer class="footer">
     <div class="container">
