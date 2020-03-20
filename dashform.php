@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/e394687089.js"></script>
 </head>
+
 <body>
   <div class="panel panel-primary">
     <div class="panel-heading"><h3>REGISTERATION FORM</h3></div>
