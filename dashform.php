@@ -32,10 +32,14 @@
       <label for="hobby">Hobbies:</label>
       <label for="hobbies"></label>
       <select id="hobby">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
+      <option value="1">SELECT</option>
+      <option value="2">Dancing</option>
+      <option value="3">Drawing</option>
+      <option value="4">Writing</option>
+      <option value="5">Listening music</option>
+      <option value="6">Socializing with Friends</option>
+      <option value="7">Swimming</option>
+      <option value="8">Writing</option>
       </select>
       <br>
       <label for="gender">Select Gender</label><br>
@@ -54,7 +58,7 @@
       </div>
   </div>
 </form>
-<p>Already Registered?<a href="#"><b> Click</b></a> here.</p>
+<p>Already Registered?<a href="login.php"><b> Click</b></a> here.</p>
 </div> </div> </div>
 <footer class="footer">
     <div class="container">
