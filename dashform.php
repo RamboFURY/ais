@@ -15,20 +15,24 @@
   <div class="panel panel-primary">
     <div class="panel-heading"><h3>REGISTERATION FORM</h3></div>
     <div class="panel-body">
-<form class="form-default" action="" method="post" name="register">
+<form class="form-default" action="adduser.php" method="post" name="addentry">
   <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" name="name" class="form-control" id="name" placeholder="please enter your complete name">
       <label for="username">User Name:</label>
       <input type="text" name="uname" class="form-control" id="uname" placeholder="enter the user name you have chosen">
       <label for="email">E-Mail:</label>
-      <input type="text" name="email" class="form-control" id="email" placeholder="enter your E-MAIL">
-      <label for="dob">Date Of Birth:</label>
-      <input type="text" name="dob" class="form-control" id="dob" placeholder="enter your date of birth">
-      <label for="add">Address:</label>
-      <input type="text" name="add" class="form-control" id="add" placeholder="place of residence">
+      <input type="text" name="email" class="form-control" id="mail" placeholder="enter your E-MAIL">
       <label for="mob">Contact:</label>
       <input type="text" name="mob" class="form-control" id="mob" placeholder="enter your mobile number">
+      <label for="add">Address:</label>
+      <input type="text" name="add" class="form-control" id="add" placeholder="place of residence">
+      <label for="gender">Select Gender</label><br>
+      <form action="">
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+      <br>
       <label for="hobby">Hobbies:</label>
       <label for="hobbies"></label>
       <select id="hobby">
@@ -42,17 +46,21 @@
       <option value="8">Writing</option>
       </select>
       <br>
-      <label for="gender">Select Gender</label><br>
-      <form action="">
-      <input type="radio" name="gender" value="male"> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br>
-      <input type="radio" name="gender" value="other"> Other
+      <label for="dob">Date Of Birth:</label>
+      <input type="text" name="dob" class="form-control" id="dob" placeholder="enter your date of birth">
+      </form>
+      <br>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+      <p><b>Select image to upload:</b></p>
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="submit" value="Upload Image" name="submit">
       </form>
       <br>
       <label for="pwd">Password:</label>
-      <input type="password" name="pwd" class="form-control" id="pwd" placeholder="create a strong password">
+      <input type="password" name="pwd" class="form-control" id="pswd" placeholder="create a strong password">
       <label for="pwd">Renter-Password:</label>
-      <input type="password" name="pwd" class="form-control" id="pwd" placeholder="enter password again">
+      <input type="password" name="pwd" class="form-control" id="pswd" placeholder="enter password again">
+      <br>
       <div class="form-group">
       <a href="#"><button type="submit" class="btn btn-primary btn-block" value="SUBMIT" name="submitbtn">Submit</button></a><br>
       </div>

@@ -25,6 +25,10 @@
                                  <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
                              </div>
                              <div class="form-group">
+		                         <div><input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> />
+	                        	 <label for="remember-me">Remember me</label>
+                           </div></div>
+                             <div class="form-group">
                                  <button type="submit" class="btn btn-primary btn-block">Log in</button>
                              </div>
                          </form>
