@@ -3,17 +3,13 @@ require_once("dbconnect.php");
 session_start();
 $dbconnection = new dbconnector;
 $dbconnection->connect();
+if (isset($_POST['submitbtn']) && $_POST['submitbtn'] == 'SUBMIT') {
 
-$result = $dbconnection->checkLogin($_POST['uname'], $_POST['pswd']);
-$row = $result->fetch_array(MYSQLI_ASSOC);
-if($result->num_rows > 0)
-{
-  $_SESSION['uname'] = $_POST['uname'];
-  header("Location:dashform.php");
-}
-else
-{
-  $_SESSION['error']='login';
-  header("Location:login.php");
-}
-?>
+    $dbconnection->addentry($_POST['name'],$_POST['uname'],$_POST['mail'],$_POST['mob'],$_POST['add'],$_POST['gender'],$_POST['hobby'],$_POST['dob'],$_POST['pswd']);
+      echo "Application submitted successfully";
+  }
+  else
+  {
+    echo "An error occured. Please try again";
+  }
+ ?>
