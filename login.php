@@ -9,9 +9,14 @@
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="https://img.icons8.com/plasticine/100/000000/monitor.png"/>
-        <img src="https://img.icons8.com/plasticine/100/000000/monitor.png"/>
+
     </head>
     <body>
+
+      <div class="container">
+      <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+      <img src="https://img.icons8.com/plasticine/100/000000/monitor.png">
       <div class="panel panel-primary">
         <div class="panel-heading"><h3>USER LOGIN</h3></div>
         <div class="panel-body">
@@ -34,6 +39,6 @@
     </form>
           </div>
         </div>
-      </div>
+      </div></div></div>
     </body>
   </html>

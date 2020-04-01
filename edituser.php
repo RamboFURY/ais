@@ -11,6 +11,10 @@
     <script src="https://kit.fontawesome.com/e394687089.js"></script>
 </head>
 <body>
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+  <img src="https://img.icons8.com/cute-clipart/128/000000/edit.png">
   <div class="panel panel-primary">
     <div class="panel-heading"><h3>USER EDITING FIELD</h3></div>
     <div class="panel-body">
@@ -28,8 +32,10 @@
       <input type="text" name="name" class="form-control" id="name" placeholder="modify present address"><br>
       <label for="name">DOB of User</label>
       <input type="text" name="name" class="form-control" id="name" placeholder="modify existing DOB"><br>
+      </div>
       <div class="form-group">
       <button type="submit" class="btn btn-secondary btn-block" value="update" name="submitbtn">Update</button><br>
       </div>
+    </form></div></div></div></div></div>
 </body>
 </html>

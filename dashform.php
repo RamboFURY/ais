@@ -12,11 +12,15 @@
 </head>
 
 <body>
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <img src="https://img.icons8.com/cute-clipart/128/000000/edit.png">
   <div class="panel panel-primary">
-    <div class="panel-heading"><h3>REGISTERATION FORM</h3></div>
-    <div class="panel-body">
-<form class="form-default" action="adduser.php" method="post" name="addentry">
-  <div class="form-group">
+      <div class="panel-heading"><h3>REGISTERATION FORM</h3></div>
+      <div class="panel-body">
+      <form class="form-default" action="adduser.php" method="post" name="addentry">
+      <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" name="name" class="form-control" id="name" placeholder="please enter your complete name">
       <label for="uname">User Name:</label>
@@ -78,7 +82,7 @@
   </div>
 </form>
 <p>Already Registered?<a href="login.php"><b>  Click</b></a> here.</p>
-</div> </div> </div>
+</div> </div> </div></div> </div>
 <footer class="footer">
     <div class="container">
        <center>

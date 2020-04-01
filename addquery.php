@@ -20,10 +20,22 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-        <a href="dashform.php" class="logo-link"><p>DataBase</p></a>
-    </div>
+
+
+
             <!-- Navigation Bar, also contains a search box -->
+            <div class="container">
+            <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+            <img src="https://img.icons8.com/doodle/48/000000/opened-folder--v3.png">
+                    <div class="panel panel-primary">
+                              <div class="panel-heading">
+                              <a href="dashform.php" class="logo-link">
+                              </div>
+                              <div class="panel-body">
+                              <h2><p>DataBase</p></h2></a>
+                              <br>
+
             <nav class="searchres-bar">
                 <ul class="nav-list">
                   <li>
@@ -40,15 +52,17 @@
                       <div class="dropdown">
                         <button type="submit" class="nav-btn"><?php echo $_SESSION['name']; ?></button>
                         <div class="dropdown-content">
-                        <a href="logout.php">Logout</a>
+                        <center><a href="logout.php"><h3>Logout</h3></a></center>
                         </div>
                       </div>
                     </li>
                 </ul>
             </nav>
+            </div></div></div></div></div>
+
   </header>
   <main>
-    <div class="addnew-main">
+
       <?php
       // Display relevant success/error message after a user submit a new issue.
        if(isset($_SESSION['error']))
@@ -66,6 +80,12 @@
        }
       ?>
     <!-- Form to accept details of new issue -->
+    <div class="container">
+    <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+    <div class="panel panel-primary">
+    <div class="panel-heading"></div>
+    <div class="panel-body">
     <form class="form-default form-create-topic" action="submitissue.php" method="post" name="addissue">
             <div class="form-group">
                 <label for="title">Topic Title</label>
@@ -81,7 +101,7 @@
 
             </div>
             <button type="submit" class="btn btn-secondary">Submit</button>
-        </form>
+    </form></div></div></div></div></div>
 
 <script>
       //Add issue form validation using jquery.
