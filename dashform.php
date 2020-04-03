@@ -19,7 +19,7 @@
   <div class="panel panel-primary">
       <div class="panel-heading"><h3>REGISTERATION FORM</h3></div>
       <div class="panel-body">
-      <form class="form-default" action="adduser.php" method="post" name="addentry">
+      <form class="form-default" action="adduser.php" method="POST" name="addentry">
       <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" name="name" class="form-control" id="name" placeholder="please enter your complete name">

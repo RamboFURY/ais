@@ -20,14 +20,14 @@
       <div class="panel panel-primary">
         <div class="panel-heading"><h3>USER LOGIN</h3></div>
         <div class="panel-body">
-    <form class="form-default" action="#" method="post" name="login">
+    <form class="form-default" action="validate.php" method="POST" name="checkLogin">
                              <div class="form-group">
-                                 <label for="username">Username: </label>
-                                 <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">
+                                 <label for="uname">Username: </label>
+                                 <input type="text" name="uname" class="form-control" id="usname" placeholder="Enter Username">
                              </div>
                              <div class="form-group">
-                                 <label for="password">Password: </label>
-                                 <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+                                 <label for="pswd">Password: </label>
+                                 <input type="password" name="pswd" class="form-control" id="pswd" placeholder="Enter Password">
                              </div>
                              <div class="form-group">
 		                         <div><input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> />

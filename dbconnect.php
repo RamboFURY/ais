@@ -21,7 +21,7 @@ ini_set('display_errors', 1);
     public function checkLogin($uname, $pswd)//checks username and password from the table of the databse
     {
       global $dblink;
-      $query = $dblink->prepare("SELECT uname FROM form WHERE uname = ? AND pswd = ? AND disabled = 0");
+      $query = $dblink->prepare("SELECT uname FROM `form` WHERE uname = ? AND pswd = ?");
       $query->bind_param("ss", $uname, $pswd);
       $query->execute();
 
@@ -30,11 +30,13 @@ ini_set('display_errors', 1);
 
 // Function to register new users
 
-    public function addentry($name, $uname, $mail, $mob, $addd, $gender, $hobby, $dob, $pswd)
+    public function addentry($name, $uname, $mail, $mob, $area, $gender, $hobby, $dob, $pswd)
     {
       global $dblink;
-      $query = $dblink->prepare("INSERT INTO 'form'(`name`, `uname`, `mail`, `mob`, `addd`, `gender`, `hobby`, `dob`, `pswd`) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
-      $query->bind_param("sssisssss",$name,$uname,$mail,$mob,$addd,$gender,$hobby,$dob,$pswd);
+//echo "INSERT INTO `form` (name, uname, mail, mob, addd, gender, hobby, dob, pswd) VALUES('".$name."', '".$uname."', '".$mail."', ".$mob.", '".$addd."', '".$gender."','".$hobby."', '".$dob."', '".$pswd."')";
+
+      $query = $dblink->prepare("INSERT INTO `form` (name, uname, mail, mob, area, gender, hobby, dob, pswd) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
+      $query->bind_param("sssisssss",$name,$uname,$mail,$mob,$area,$gender,$hobby,$dob,$pswd);
       if($query->execute())
       {
        return 1;
