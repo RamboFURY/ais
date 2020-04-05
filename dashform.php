@@ -31,47 +31,99 @@
       <input type="tel" name="mob" class="form-control" id="mob" placeholder="enter your mobile number">
       <label for="addd">Address:</label>
       <input type="text" name="addd" class="form-control" id="addd" placeholder="place of residence">
-      <!--
+      <label for="field_countries">Country</label>
+      <select name="field_countries" id="field_countries">
+                      <option value="all">SEARCH COUNTRIES</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Benin">Benin</option>
+                      <option value="Botswana">Botswana</option>
+                      <option value="Cameroon">Cameroon</option>
+                      <option value="DR Congo">DR Congo</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Gabon">Gabon</option>
+                      <option value="Gambia">Gambia</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Lesotho">Lesotho</option>
+                      <option value="Libya">Libya</option>
+                      <option value="India">India</option>
+                      <option value="Madagascar">Madagascar</option>
+                      <option value="Malawi">Malawi</option>
+                      <option value="Mali">Mali</option>
+                      <option value="Mauritius">Mauritius</option>
+                      <option value="Morocco">Morocco</option>
+                      <option value="Mozambique">Mozambique</option>
+                      <option value="Namibia">Namibia</option>
+                      <option value="Niger">NigerA</option>
+                      <option value="Rwanda">Rwanda</option>
+                      <option value="Senegal">Senegal</option>
+                      <option value="Seychelles">Seychelles</option>
+                      <option value="South Africa">South Africa</option>
+                      <option value="Swaziland">Swaziland</option>
+                      <option value="Tanzania">Tanzania</option>
+                      <option value="Tunisia">Tunisia</option>
+                      <option value="Uganda">Uganda</option>
+                      <option value="Zambia">Zambia</option>
+                      <option value="Zimbabwe">Zimbabwe</option>
+      </select><br>
       <label for="gender">Select Gender</label><br>
-      <form action="">
       <input type="radio" name="gender" value="male"> Male<br>
       <input type="radio" name="gender" value="female"> Female<br>
       <input type="radio" name="gender" value="other"> Other
       <br>
-      <form action="" method="post">
-      <label for="hobby">Hobbies:</label>
-      <select id="hobby" name="hobby">
-      <option value="1">SELECT</option>
-      <option value="Dancing">Dancing</option>
-      <option value="Drawing">Drawing</option>
-      <option value="Writing">Writing</option>
-      <option value="Listening music">Listening music</option>
-      <option value="Socializing with Friends">Socializing with Friends</option>
-      <option value="Swimming">Swimming</option>
-      <option value="Writing">Writing</option>
-      </select>
-     </form>
-   -->
-   <label for="gender">Gender:(M/F)</label>
+      <!--
+      <form action="checkbox.php" method="POST">
+      <label for="hobby">Hobbies:</label><br>
+      <input type="checkbox" name="check_list[]" value="Dancing"><label>Dancing</label><br/>
+      <input type="checkbox" name="check_list[]" value="Singing"><label>Singing</label><br/>
+      <input type="checkbox" name="check_list[]" value="Listening music"><label>Listening music</label><br/>
+      <input type="checkbox" name="check_list[]" value="Swimming"><label>Swimming</label><br/>
+      <input type="checkbox" name="check_list[]" value="Socializing with Friends"><label>Socializing with Friends</label><br/>
+      <input type="checkbox" name="check_list[]" value="Writing"><label>Writing</label><br/>
+
+
+-->
+
+
+   <!--<label for="gender">Gender:(M/F)</label>
    <input type="text" name="gender" class="form-control" id="gender" placeholder="enter your gender">
 
+
+
+
+   <form action="uploading.php" method="post" enctype="multipart/form-data">
+   <h2>Upload Pofile Image |<a href="">AIS</a></h2><br><br>
+   <table>
+   <tr><td height="70" width="100">Title</td><td><input type="text" required="required" name="ntitle" class="resizedTextbox"><br><br></td></tr>
+   <tr><td colspan="2"><input type="file" class="cck" name="sfile" id="fileName" accept="image/*"><br><br></td></tr>
+   <tr><td colspan="2"><input class="cck" type="submit" name="notification" value="Upload"/></td></tr>
+   </table>
+   </form>
+   <select id="hobby" name="hobby">
+   <option value="1">SELECT</option>
+   <option value="Dancing">Dancing</option>
+   <option value="Drawing">Drawing</option>
+   <option value="Writing">Writing</option>
+   <option value="Listening music">Listening music</option>
+   <option value="Socializing with Friends">Socializing with Friends</option>
+   <option value="Swimming">Swimming</option>
+   <option value="Writing">Writing</option>
+   </select>-->
    <label for="hobby">hobby:</label>
    <input type="text" name="hobby" class="form-control" id="hobby" placeholder="enter your hobbies">
-
 
       <br>
       <label for="dob">Date Of Birth:</label>
       <input type="date" name="dob" class="form-control" id="dob" placeholder="enter your date of birth">
       </form>
       <br>
-      <!--
-      <form action="upload.php" method="post" enctype="multipart/form-data">
-      <p><b>Select image to upload:</b></p>
-      <input type="file" name="fileToUpload" id="fileToUpload">
-      <input type="submit" value="Upload Image" name="submit">
-      </form>
-    -->
-      <br>
+
+
+
+
+      <br>.
       <label for="pswd">Password:</label>
       <input type="password" name="pswd" class="form-control" id="pswd" required="required" pattern=".{6,}" placeholder="create a strong password">
 

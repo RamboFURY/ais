@@ -1,8 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-
+//$con = mysqli_connect("localhost","root","","ais");
   class dbconnector
   {
     var $dblink;
@@ -30,13 +29,13 @@ ini_set('display_errors', 1);
 
 // Function to register new users
 
-    public function addentry($name, $uname, $mail, $mob, $area, $gender, $hobby, $dob, $pswd)
+    public function addentry($name, $uname, $mail, $mob, $area, $field_countries, $gender, $hobby, $dob, $pswd)
     {
       global $dblink;
 //echo "INSERT INTO `form` (name, uname, mail, mob, addd, gender, hobby, dob, pswd) VALUES('".$name."', '".$uname."', '".$mail."', ".$mob.", '".$addd."', '".$gender."','".$hobby."', '".$dob."', '".$pswd."')";
 
-      $query = $dblink->prepare("INSERT INTO `form` (name, uname, mail, mob, area, gender, hobby, dob, pswd) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
-      $query->bind_param("sssisssss",$name,$uname,$mail,$mob,$area,$gender,$hobby,$dob,$pswd);
+      $query = $dblink->prepare("INSERT INTO `form` (name, uname, mail, mob, area, field_countries, gender, hobby, dob, pswd) VALUES(?, ?, ?, ?, ?,?, ?, ?, ?, ?)");
+      $query->bind_param("sssissssss",$name,$uname,$mail,$mob,$area,$field_countries,$gender,$hobby,$dob,$pswd);
       if($query->execute())
       {
        return 1;
