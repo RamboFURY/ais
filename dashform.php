@@ -29,9 +29,10 @@
       <input type="email" name="mail" class="form-control" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required" placeholder="enter your E-MAIL">
       <label for="mob">Contact:</label>
       <input type="tel" name="mob" class="form-control" id="mob" placeholder="enter your mobile number">
-      <label for="addd">Address:</label>
-      <input type="text" name="addd" class="form-control" id="addd" placeholder="place of residence">
+      <label for="area">Address:</label>
+      <input type="text" name="area" class="form-control" id="area" placeholder="place of residence">
       <label for="field_countries">Country</label>
+      <!--
       <select name="field_countries" id="field_countries">
                       <option value="all">SEARCH COUNTRIES</option>
                       <option value="Algeria">Algeria</option>
@@ -67,14 +68,16 @@
                       <option value="Uganda">Uganda</option>
                       <option value="Zambia">Zambia</option>
                       <option value="Zimbabwe">Zimbabwe</option>
+                    -->
       </select><br>
       <label for="gender">Select Gender</label><br>
       <input type="radio" name="gender" value="male"> Male<br>
       <input type="radio" name="gender" value="female"> Female<br>
       <input type="radio" name="gender" value="other"> Other
       <br>
-      <!--
-      <form action="checkbox.php" method="POST">
+
+
+    <!--  <form action="checkbox.php" method="POST">
       <label for="hobby">Hobbies:</label><br>
       <input type="checkbox" name="check_list[]" value="Dancing"><label>Dancing</label><br/>
       <input type="checkbox" name="check_list[]" value="Singing"><label>Singing</label><br/>
@@ -99,7 +102,7 @@
    <tr><td height="70" width="100">Title</td><td><input type="text" required="required" name="ntitle" class="resizedTextbox"><br><br></td></tr>
    <tr><td colspan="2"><input type="file" class="cck" name="sfile" id="fileName" accept="image/*"><br><br></td></tr>
    <tr><td colspan="2"><input class="cck" type="submit" name="notification" value="Upload"/></td></tr>
-   </table>
+ </table>-->
    </form>
    <select id="hobby" name="hobby">
    <option value="1">SELECT</option>
@@ -110,20 +113,21 @@
    <option value="Socializing with Friends">Socializing with Friends</option>
    <option value="Swimming">Swimming</option>
    <option value="Writing">Writing</option>
-   </select>-->
+   </select>
+   <!--
    <label for="hobby">hobby:</label>
-   <input type="text" name="hobby" class="form-control" id="hobby" placeholder="enter your hobbies">
+   <input type="text" name="hobby" class="form-control" id="hobby" placeholder="enter your hobbies">-->
 
       <br>
       <label for="dob">Date Of Birth:</label>
       <input type="date" name="dob" class="form-control" id="dob" placeholder="enter your date of birth">
-      </form>
+
       <br>
 
 
 
 
-      <br>.
+      <br>
       <label for="pswd">Password:</label>
       <input type="password" name="pswd" class="form-control" id="pswd" required="required" pattern=".{6,}" placeholder="create a strong password">
 

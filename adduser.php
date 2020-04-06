@@ -9,10 +9,10 @@ $dbconnection->connect();
 if (isset($_POST['submitbtn'])== 'SUBMIT')
   {
 
-    $dbconnection->addentry($_POST['name'],$_POST['uname'],$_POST['mail'],$_POST['mob'],$_POST['area'],$_POST['field_countries'],$_POST['gender'],$_POST['hobby'],$_POST['dob'],$_POST['pswd']);
+    $dbconnection->addentry($_POST['name'],$_POST['uname'],$_POST['mail'],$_POST['mob'],$_POST['area'],$_POST['gender'],$_POST['hobby'],$_POST['dob'],$_POST['pswd']);
       echo "You Have Been Registered as a new user. LogIn to Continue";
 
-      sleep(2);
+      sleep(0);
 
       header("Location:login.php");
   }
