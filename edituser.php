@@ -18,20 +18,20 @@
   <div class="panel panel-primary">
     <div class="panel-heading"><h3>USER EDITING FIELD</h3></div>
     <div class="panel-body">
-<form class="form-default" action="adduser.php" method="post" name="addentry">
+<form class="form-default" action="adduser.php" method="post" name="addentryuser">
   <div class="form-group">
       <label for="name">Name of User</label>
       <input type="text" name="name" class="form-control" id="name" placeholder="modify name"><br>
-      <label for="name">UserName of User</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="modify official username"><br>
-      <label for="name">E-mail of User</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="modify registered mail-id"><br>
-      <label for="name">Contact of User</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="modify personal contact info."><br>
-      <label for="name">Address of User</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="modify present address"><br>
-      <label for="name">DOB of User</label>
-      <input type="text" name="name" class="form-control" id="name" placeholder="modify existing DOB"><br>
+      <label for="uname">UserName of User</label>
+      <input type="text" name="uname" class="form-control" id="uname" placeholder="modify official username"><br>
+      <label for="mail">E-mail of User</label>
+      <input type="text" name="mail" class="form-control" id="mail" placeholder="modify registered mail-id"><br>
+      <label for="mob">Contact of User</label>
+      <input type="text" name="mob" class="form-control" id="mob" placeholder="modify personal contact info."><br>
+      <label for="area">Address of User</label>
+      <input type="text" name="area" class="form-control" id="area" placeholder="modify present address"><br>
+      <label for="dob">DOB of User</label>
+      <input type="text" name="dob" class="form-control" id="dob" placeholder="modify existing DOB"><br>
       </div>
       <div class="form-group">
       <button type="submit" class="btn btn-secondary btn-block" value="update" name="submitbtn">Update</button><br>

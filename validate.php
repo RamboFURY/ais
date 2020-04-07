@@ -9,7 +9,9 @@ $result = $dbconnection->checkLogin($_POST['uname'], $_POST['pswd']);
 $row = $result->fetch_array(MYSQLI_ASSOC);
 if($result->num_rows > 0)
 {
-header("Location:dashform.php");
+$_SESSION['uname'] = $_POST['uname'];
+$_SESSION['pswd'] = $_POST['pswd'];
+header("Location:edituser.php");
 }
 else
 {

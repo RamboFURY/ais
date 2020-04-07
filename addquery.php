@@ -1,11 +1,11 @@
-<?php/*
+<?php
       session_start();
 
       if(!isset($_SESSION['uname']))
       {
            $_SESSION['error'] = 'noaccess';
            header("Location:login.php");
-      }*/
+      }
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,7 +33,7 @@
                               <a href="dashform.php" class="logo-link">
                               </div>
                               <div class="panel-body">
-                              <h2><p>DataBase</p></h2></a>
+                              <h2><p>AIS DataBase</p></h2></a>
                               <br>
 
             <nav class="searchres-bar">
@@ -50,7 +50,7 @@
                     <li>
                       <!-- Displays the name of the logged in user from session and presnets relevant account options in a dropdown-->
                       <div class="dropdown">
-                        <button type="submit" class="nav-btn"><?php echo $_SESSION['name']; ?></button>
+                        <button type="submit" class="nav-btn"></button>
                         <div class="dropdown-content">
                         <center><a href="logout.php"><h3>Logout</h3></a></center>
                         </div>
@@ -92,12 +92,12 @@
                     <input type="text" name="title" class="form-control issue-title" id="title" placeholder="Title of your Issue">
             </div>
             <div class="form-group">
-                <label for="description">Description</label>
-                    <textarea name="description" class="form-control form-textarea" rows="5" cols="100" placeholder="Please Describe the Issue"></textarea>
+                <label for="des">Description</label>
+                    <textarea name="des" class="form-control form-textarea" id="des" rows="5" cols="100" placeholder="Please Describe the Issue"></textarea>
             </div>
             <div class="form-group">
-                <label for="resolution">Resolution</label>
-                    <textarea name="resolution" class="form-control form-textarea" rows="5" cols="100" placeholder="Resolution for the Described Issue"></textarea>
+                <label for="res">Resolution</label>
+                    <textarea name="res" class="form-control form-textarea" id="res" rows="5" cols="100" placeholder="Resolution for the Described Issue"></textarea>
 
             </div>
             <button type="submit" class="btn btn-secondary">Submit</button>
