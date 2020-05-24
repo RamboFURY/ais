@@ -23,7 +23,7 @@
     <form class="form-default" action="validate.php" method="POST" name="checkLogin">
                              <div class="form-group">
                                  <label for="uname">Username: </label>
-                                 <input type="text" name="uname" class="form-control" id="usname" placeholder="Enter Username">
+                                 <input type="text" name="uname" class="form-control" id="uname" placeholder="Enter Username">
                              </div>
                              <div class="form-group">
                                  <label for="pswd">Password: </label>
